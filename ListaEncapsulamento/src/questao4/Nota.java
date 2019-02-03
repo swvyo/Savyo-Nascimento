@@ -2,22 +2,36 @@ package questao4;
 
 import java.util.List;
 
-public class Nota {
+public class Nota{
 		private String dono;
 		private String texto;
 		private boolean estado;
-		protected List numero;
+		protected List num;
 		
 		public Nota(String dono, String texto, boolean estado) {
 			this.dono = dono;
 			this.texto = texto;
+			this.estado = estado;
+		}
+
+		public List getNum() {
+			return num;
+		}
+
+		public void setNum(List num) {
+			this.num = num;
+		}
+
+		public Nota(String dono,String texto) {
+			this.dono = dono;
+			this.texto = texto;
 			this.estado = true;
 		}
-		
+
 		public String getDono() {
 			return dono;
 		}
-		
+
 		public void setDono(String dono) {
 			this.dono = dono;
 		}
@@ -38,19 +52,9 @@ public class Nota {
 			this.estado = estado;
 		}
 		
-		public List getNumero() {
-			return numero;
-		}
 
-		public void setNum(List numero) {
-			this.numero = numero;
-		}
+}
 
-		public Nota(String dono,String texto) {
-			this.dono = dono;
-			this.texto = texto;
-			this.estado = true;
-			
-		}
-	}
+
+
 
